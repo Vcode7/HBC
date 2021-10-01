@@ -1,0 +1,222 @@
+.head{
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background: transparent;
+    justify-content: center;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text span{
+    font-size: 1.7rem;
+    animation: color 10s 5s linear infinite ;
+    margin: 1vw;
+}
+.text{
+    animation: color 10s 6s linear infinite ;
+}
+
+@keyframes color {
+    0%{
+        color : hsl(0,100%, 50%)
+    }
+    20%{
+        color : hsl(50,100%, 50%)
+    }
+    40%{
+        color : hsl(100,100%, 50%)
+    }
+    60%{
+        color : hsl(150,100%, 50%)
+    }
+    80%{
+        color : hsl(200,100%, 50%)
+    }
+
+    100%{
+        color : hsl(300,100%, 50%)
+    }
+}
+
+.bck-video{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 8;
+    border: 2px solid red;
+}
+.bck-video video{
+    height:25rem;
+}
+.img{
+	width:100%;
+    max-height: 30rem;
+    min-height: 25rem;
+    animation: img 12s linear infinite;
+    background: url('img/c1.jpg')no-repeat center center/cover;
+}
+@keyframes img {
+    0%{background: url('img/c1.jpg')no-repeat center center/cover;}
+    20%{background: url('img/c8.jpg')no-repeat center center/cover;}
+    40%{background: url('img/c3.jpg')no-repeat center center/cover;}
+    60%{background: url('img/c6.jpg')no-repeat center center/cover;}
+    80%{background: url('img/c4.jpg')no-repeat center center/cover;}
+    100%{background: url('img/c5.jpg')no-repeat center center/cover;}
+}
+.wish1{
+    margin: 4vw;
+    padding: 4vw;
+    background: repeating-linear-gradient(120deg,hsl(300,90%,50%),hsl(260,100%,60%));
+}
+.wht{
+    color:white !important;
+}
+#text1{
+    animation: text1 6s linear 1 forwards;
+    letter-spacing: 20px;
+    opacity: 0;
+}
+@keyframes text1 {
+    100%{
+        opacity: 1;
+        letter-spacing: 0px;        
+    }
+}
+
+#text2{
+    letter-spacing: -1000px;
+    opacity: 0;
+    animation: text2 6s linear 1 forwards;
+}
+@keyframes text2 {
+    0%{
+        opacity: 0;
+        letter-spacing: -100px;
+}
+90%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+		letter-spacing: 0px;
+    }
+}
+
+
+
+#text3 span{
+    position: relative;
+    top:0;
+    left:0;
+    opacity: 0;
+    animation: textani 1s linear 1 forwards;
+}
+
+@keyframes textani {
+    0%{
+        color: red;
+        top:-10vh;
+		opacity: 0;
+    }
+    90%{
+        color: white !important;
+        top:0;
+        opacity: 1;
+    }
+    100%{
+        color: inherit;
+        opacity: 1;
+    }
+}
+
+#text3 span:nth-child(1){
+    animation-delay: 1s;
+}
+#text3 span:nth-child(2){
+    animation-delay: 2s;
+}
+#text3 span:nth-child(3){
+    animation-delay: 3s;
+}
+#text3 span:nth-child(4){
+    animation-delay: 3.5s;
+}
+#text3 span:nth-child(5){
+    animation-delay: 4s;
+}
+#text3 span:nth-child(6){
+    animation-delay: 4.5s;
+}
+#text3 span:nth-child(7){
+    animation-delay: 5.5s;
+}
+#text3 span:nth-child(8){
+    animation-delay: 6s;
+}
+#text1 span:nth-child(1){
+    animation-delay: 1s;
+}
+#text1 span:nth-child(2){
+    animation-delay: 2s;
+}
+#text1 span:nth-child(3){
+    animation-delay: 3s;
+}
+#text1 span:nth-child(4){
+    animation-delay: 4s;
+}
+#text1 span:nth-child(5){
+    animation-delay: 5s;
+}
+
+
+#text2 span:nth-child(1){
+    animation-delay: 1s;
+}
+#text2 span:nth-child(2){
+    animation-delay: 1.5s;
+}
+#text2 span:nth-child(3){
+    animation-delay: 2s;
+}
+#text2 span:nth-child(4){
+    animation-delay: 2.5s;
+}
+#text2 span:nth-child(5){
+    animation-delay: 3s;
+}
+#text2 span:nth-child(6){
+    animation-delay: 3.5s;
+}
+#text2 span:nth-child(7){
+    animation-delay: 4s;
+}
+#text2 span:nth-child(8){
+    animation-delay: 4.5s;
+}
+
+.wish2{
+    margin: 0vw;
+    padding: 5vw;
+    background: hsl(210,100%, 50%);
+
+}
+.footer{
+    width: 100%;
+    color: white;
+    margin-top: 10vh;
+    padding: 5vh 0px;
+    text-align: center;
+}
+.wish3{
+    margin: 0vw;
+    padding: 5vw;
+    background: hsl(30,100%, 50%);
+
+}
